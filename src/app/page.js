@@ -1,103 +1,67 @@
+"use client";
+
+import React from "react";
+import Navbar from "@/components/navbar-landing";
 import Image from "next/image";
+import About from "@/components/landing/about";
+import RumahTangga from "@/components/landing/rumah-tangga";
+import Parenting from "@/components/landing/parenting";
+import Artikel from "@/components/landing/artikel";
+import Contact from "@/components/landing/contact";
 import Link from "next/link";
 
-export default function Home() {
+function App() {
   return (
-    <main className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-white px-6 py-16 flex flex-col items-center">
-      {/* Hero Section */}
-      <section className="max-w-4xl text-center">
-        <h1 className="text-4xl sm:text-5xl font-bold mb-4">
-          Welcome to <span className="text-blue-600 dark:text-blue-400">NovaTech</span>
-        </h1>
-        <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-          Innovating tomorrow's solutions today. We build scalable, cutting-edge software tailored for your business.
-        </p>
-        <div className="flex justify-center gap-4">
-          <a
-            href="#services"
-            className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition"
-          >
-            Our Services
-          </a>
-          <a
-            href="#contact"
-            className="border border-blue-600 text-blue-600 px-6 py-3 rounded-full hover:bg-blue-50 dark:hover:bg-gray-800 transition"
-          >
-            Contact Us
-          </a>
-        </div>
-      </section>
+    <div className="App bg-white">
+      <Navbar />
 
-      {/* Services */}
-      <section id="services" className="mt-24 w-full max-w-5xl text-center">
-        <h2 className="text-3xl font-semibold mb-4">What We Do</h2>
-        <p className="mb-12 text-gray-600 dark:text-gray-400">
-          We offer a wide range of tech solutions designed to help you scale.
-        </p>
-        <div className="grid sm:grid-cols-3 gap-8">
-          <div className="p-6 border rounded-lg bg-gray-50 dark:bg-gray-900">
-            <h3 className="text-xl font-semibold mb-2">Web Development</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">
-              Build fast, responsive, and secure websites using the latest tech.
-            </p>
-          </div>
-          <div className="p-6 border rounded-lg bg-gray-50 dark:bg-gray-900">
-            <h3 className="text-xl font-semibold mb-2">Cloud Integration</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">
-              Leverage the power of cloud computing with seamless integrations.
-            </p>
-          </div>
-          <div className="p-6 border rounded-lg bg-gray-50 dark:bg-gray-900">
-            <h3 className="text-xl font-semibold mb-2">AI & Automation</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400">
-              Automate workflows with intelligent systems and machine learning.
-            </p>
+      <div className="absolute top-0 right-0 z-10 w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px] lg:w-[600px] lg:h-[600px] xl:w-[700px] xl:h-[700px] overflow-hidden">
+        <div className="absolute w-[120%] h-[120%] bg-gradient-to-b from-[#008C99] to-[#00B8C4] rounded-full -top-1/4 -right-1/4"></div>
+      </div>
+
+      <section id="beranda"  className="relative overflow-hidden min-h-screen bg-white flex flex-col lg:flex-row items-center justify-start pt-15 md:pt-0 px-4 sm:px-6 md:px-8 lg:px-16">
+        {/* Text Content */}
+        <aside className="w-full lg:w-1/2 text-center lg:text-left lg:mb-0 lg:pr-8 z-20 order-2 lg:order-1 lg:py-20">
+          <h2 className="text-[#008C99] text-lg sm:text-xl mb-2">
+            Remaja Sehat
+          </h2>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold mb-2 text-black leading-tight">
+            Panduan Bijak Remaja Menuju Hubungan Sehat & Bahagia
+          </h1>
+
+          <p className="text-gray-500 mb-6 lg:mb-8 text-sm sm:text-base lg:text-lg leading-relaxed max-w-md mx-auto lg:mx-0">
+            Platform edukatif untuk remaja dalam memahami relasi sehat, kesiapan emosional, dan pengetahuan prakonsepsi sebagai bekal membangun masa depan dan keluarga yang harmonis.
+          </p>
+
+          <Link
+            href="/"
+            className="px-6 py-3 sm:px-8 sm:py-3 bg-[#008C99] text-white font-bold text-sm sm:text-base rounded-full transition-all duration-200 hover:bg-white hover:text-[#0798C5] border-2 border-transparent hover:border-[#0798C5] shadow-lg hover:shadow-xl cursor-pointer"
+          >
+            Mulai Sekarang
+          </Link>
+        </aside>
+
+        <div className="w-full lg:w-1/2 z-20 flex justify-center items-center order-1 lg:order-2 mb-6 lg:mb-0">
+          <div className="relative">
+            <Image
+              src="/assets/Human.png"
+              alt="StudyCare Hero Image"
+              width={300}
+              height={210}
+              className=" w-[325px] h-[220px] sm:w-[350px] sm:h-[245px] md:w-[400px] md:h-[280px] lg:w-[550px] lg:h-[415px] xl:w-[700px] xl:h-[550px] object-contain"
+              priority
+            />
           </div>
         </div>
-
-      <Link
-        href="/info"
-        className="text-blue-600 hover:underline mt-6"
-      >
-        Learn more about us →
-      </Link>
-      </section>
-    
-      {/* Contact */}
-      <section id="contact" className="mt-24 w-full max-w-xl text-center">
-        <h2 className="text-3xl font-semibold mb-4">Get in Touch</h2>
-        <p className="mb-6 text-gray-600 dark:text-gray-400">
-          Let's talk about how we can work together.
-        </p>
-        <form className="flex flex-col gap-4">
-          <input
-            type="text"
-            placeholder="Your Name"
-            className="px-4 py-3 rounded border bg-white dark:bg-gray-800 dark:border-gray-700"
-          />
-          <input
-            type="email"
-            placeholder="Email Address"
-            className="px-4 py-3 rounded border bg-white dark:bg-gray-800 dark:border-gray-700"
-          />
-          <textarea
-            rows="4"
-            placeholder="Your Message"
-            className="px-4 py-3 rounded border bg-white dark:bg-gray-800 dark:border-gray-700"
-          ></textarea>
-          <button
-            type="submit"
-            className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition"
-          >
-            Send Message
-          </button>
-        </form>
       </section>
 
-      {/* Footer */}
-      <footer className="mt-24 text-center text-sm text-gray-500 dark:text-gray-600">
-        &copy; {new Date().getFullYear()} NovaTech. All rights reserved.
-      </footer>
-    </main>
+      <About />
+      <RumahTangga />
+      <Parenting />
+      {/* <Artikel /> */}
+      <Contact />
+    </div>
   );
 }
+
+export default App;
