@@ -195,7 +195,7 @@ const handleSectionNavigation = (sectionId) => {
               Tentang Kami
             </button>
 
-            {/* Rumah Tangga - Dropdown */}
+            {/* Komitmen - Dropdown */}
             <div 
               className="relative"
               onMouseEnter={() => handleDropdownEnter('rumahTangga')}
@@ -209,7 +209,7 @@ const handleSectionNavigation = (sectionId) => {
                     : 'text-gray-600 hover:text-white hover:bg-[#008C99] hover:shadow-lg'
                 }`}
               >
-                Rumah Tangga
+                Komitmen
                 <svg className={`w-4 h-4 transition-transform duration-300 ${dropdownOpen.rumahTangga ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
@@ -218,16 +218,16 @@ const handleSectionNavigation = (sectionId) => {
               {dropdownOpen.rumahTangga && (
                 <div className="absolute top-full w-56 bg-white rounded-lg shadow-lg border border-gray-100 py-2 animate-fade-in">
                   <Link href="/prakonsepsi" className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#008C99] transition-colors">
-                    Prakonsepsi
+                    Kesiapan Komitmen
                   </Link>
                   <Link href="/kesiapan-relasional" className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#008C99] transition-colors">
-                    Kesiapan Relasional
+                    Mengapa Harus Komitmen?
                   </Link>
                 </div>
               )}
             </div>
 
-            {/* Keluarga & Parenting - Dropdown */}
+            {/* Kecerdasan Emosi - Dropdown */}
             <div 
               className="relative"
               onMouseEnter={() => handleDropdownEnter('keluargaParenting')}
@@ -241,7 +241,7 @@ const handleSectionNavigation = (sectionId) => {
                     : 'text-gray-600 hover:text-white hover:bg-[#008C99] hover:shadow-lg'
                 }`}
               >
-                Keluarga & Parenting
+                Kecerdasan Emosi
                 <svg className={`w-4 h-4 transition-transform duration-300 ${dropdownOpen.keluargaParenting ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
@@ -250,10 +250,10 @@ const handleSectionNavigation = (sectionId) => {
               {dropdownOpen.keluargaParenting && (
                 <div className="absolute top-full w-56 bg-white rounded-lg shadow-lg border border-gray-100 py-2 animate-fade-in">
                   <Link href="/manajemen-stres" className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#008C99] transition-colors">
-                    Manajemen Stres
+                    Kecerdasan Emosi Dalam Hubungan
                   </Link>
                   <Link href="/stunting" className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#008C99] transition-colors">
-                    Stunting & Kesejahteraan Keluarga
+                    Mari berefleksi!
                   </Link>
                 </div>
               )}
@@ -384,7 +384,7 @@ const handleSectionNavigation = (sectionId) => {
               Tentang Kami
             </button>
 
-            {/* Rumah Tangga - Mobile Dropdown */}
+            {/* Komitmen - Mobile Dropdown */}
             <div className="border-b border-gray-50">
               <button
                 onClick={() => handleMobileDropdownToggle('rumahTangga')}
@@ -394,7 +394,7 @@ const handleSectionNavigation = (sectionId) => {
                     : 'text-gray-700 hover:text-[#008C99] hover:bg-gray-50'
                 }`}
               >
-                Rumah Tangga
+                Komitmen
                 <svg className={`w-4 h-4 transition-transform duration-300 ${mobileDropdownOpen.rumahTangga ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
@@ -403,16 +403,16 @@ const handleSectionNavigation = (sectionId) => {
               {mobileDropdownOpen.rumahTangga && (
                 <div className="bg-gray-50">
                   <Link href="/prakonsepsi" onClick={closeMobileMenu} className="block px-10 py-3 text-gray-600 hover:text-[#008C99] transition-colors">
-                    Prakonsepsi
+                    Kesiapan Komitmen
                   </Link>
                   <Link href="/kesiapan-relasional" onClick={closeMobileMenu} className="block px-10 py-3 text-gray-600 hover:text-[#008C99] transition-colors">
-                    Kesiapan Relasional
+                    Mengapa Harus Komitmen?
                   </Link>
                 </div>
               )}
             </div>
 
-            {/* Keluarga & Parenting - Mobile Dropdown */}
+            {/* Kecerdasan Emosi - Mobile Dropdown */}
             <div className="border-b border-gray-50">
               <button
                 onClick={() => handleMobileDropdownToggle('keluargaParenting')}
@@ -422,7 +422,7 @@ const handleSectionNavigation = (sectionId) => {
                     : 'text-gray-700 hover:text-[#008C99] hover:bg-gray-50'
                 }`}
               >
-                Keluarga & Parenting
+                Kecerdasan Emosi
                 <svg className={`w-4 h-4 transition-transform duration-300 ${mobileDropdownOpen.keluargaParenting ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
@@ -431,10 +431,10 @@ const handleSectionNavigation = (sectionId) => {
               {mobileDropdownOpen.keluargaParenting && (
                 <div className="bg-gray-50">
                   <Link href="/manajemen-stres" onClick={closeMobileMenu} className="block px-10 py-3 text-gray-600 hover:text-[#008C99] transition-colors">
-                    Manajemen Stres
+                    Kecerdasan Emosi Dalam Hubungan
                   </Link>
                   <Link href="/stunting" onClick={closeMobileMenu} className="block px-10 py-3 text-gray-600 hover:text-[#008C99] transition-colors">
-                    Stunting & Kesejahteraan Keluarga
+                    Mari berefleksi!
                   </Link>
                 </div>
               )}
