@@ -57,7 +57,7 @@ function ComingSoon() {
           {/* Main Illustration */}
           <div className="mb-8 sm:mb-12">
             <div className="relative inline-block">
-              <div className="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 mx-auto mb-6 bg-gradient-to-br from-[#0798C5] to-[#7FD8E8] rounded-full flex items-center justify-center animate-pulse">
+              <div className="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 mx-auto mb-6 bg-gradient-to-br from-[#008C99] to-[#00B8C4] rounded-full flex items-center justify-center animate-pulse">
                 <div className="text-4xl sm:text-5xl lg:text-6xl">🚀</div>
               </div>
               <div className="absolute -top-4 -right-4 w-8 h-8 bg-yellow-400 rounded-full animate-ping"></div>
@@ -69,15 +69,15 @@ function ComingSoon() {
           <div className="mb-8 sm:mb-12">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-800 mb-4 sm:mb-6 animate-fadeIn">
               Segera
-              <span className="block text-[#0798C5] animate-pulse">Hadir!</span>
+              <span className="block text-[#008C99] animate-pulse">Hadir!</span>
             </h1>
             <p className="text-lg sm:text-xl text-gray-600 mb-4 max-w-2xl mx-auto leading-relaxed">
               Kami sedang menyiapkan sesuatu yang luar biasa untuk membantu perjalanan 
-              <span className="font-semibold text-[#0798C5]"> harmoni keluarga</span> Anda.
+              <span className="font-semibold text-[#008C99]"> komitmen</span> Anda.
             </p>
             <p className="text-base sm:text-lg text-gray-500 max-w-xl mx-auto">
-              Platform lengkap untuk konseling, edukasi, dan dukungan keluarga yang akan segera menghadirkan 
-              fitur-fitur revolusioner untuk kesejahteraan keluarga Indonesia.
+              Platform lengkap untuk konseling, edukasi, dan dukungan pasangan yang akan segera menghadirkan 
+              fitur-fitur revolusioner untuk kesejahteraan pasangan Indonesia.
             </p>
           </div>
 
@@ -86,25 +86,25 @@ function ComingSoon() {
             <h3 className="text-xl sm:text-2xl font-semibold text-gray-700 mb-6">Peluncuran dalam:</h3>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-md sm:max-w-2xl mx-auto">
               <div className="bg-white/80 backdrop-blur-sm p-4 sm:p-6 rounded-2xl shadow-lg border border-gray-100 transform hover:scale-105 transition-transform duration-300">
-                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0798C5] animate-pulse">
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#008C99] animate-pulse">
                   {String(countdown.days).padStart(2, '0')}
                 </div>
                 <div className="text-sm sm:text-base text-gray-600 font-medium">Hari</div>
               </div>
               <div className="bg-white/80 backdrop-blur-sm p-4 sm:p-6 rounded-2xl shadow-lg border border-gray-100 transform hover:scale-105 transition-transform duration-300">
-                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0798C5] animate-pulse">
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#008C99] animate-pulse">
                   {String(countdown.hours).padStart(2, '0')}
                 </div>
                 <div className="text-sm sm:text-base text-gray-600 font-medium">Jam</div>
               </div>
               <div className="bg-white/80 backdrop-blur-sm p-4 sm:p-6 rounded-2xl shadow-lg border border-gray-100 transform hover:scale-105 transition-transform duration-300">
-                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0798C5] animate-pulse">
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#008C99] animate-pulse">
                   {String(countdown.minutes).padStart(2, '0')}
                 </div>
                 <div className="text-sm sm:text-base text-gray-600 font-medium">Menit</div>
               </div>
               <div className="bg-white/80 backdrop-blur-sm p-4 sm:p-6 rounded-2xl shadow-lg border border-gray-100 transform hover:scale-105 transition-transform duration-300">
-                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0798C5] animate-pulse">
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#008C99] animate-pulse">
                   {String(countdown.seconds).padStart(2, '0')}
                 </div>
                 <div className="text-sm sm:text-base text-gray-600 font-medium">Detik</div>
@@ -119,7 +119,7 @@ function ComingSoon() {
               <div className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-gray-100 hover:bg-white/80 transition-all duration-300 transform hover:scale-105">
                 <div className="text-3xl mb-3 animate-bounce">🧠</div>
                 <h4 className="font-semibold text-gray-800 mb-2">Tips</h4>
-                <p className="text-sm text-gray-600">Tips parenting dan berkeluarga!</p>
+                <p className="text-sm text-gray-600">Tips mencari pasangan!</p>
               </div>
               <div className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-gray-100 hover:bg-white/80 transition-all duration-300 transform hover:scale-105">
                 <div className="text-3xl mb-3 animate-bounce" style={{ animationDelay: '0.5s' }}>📚</div>
