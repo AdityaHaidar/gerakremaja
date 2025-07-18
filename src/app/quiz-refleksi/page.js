@@ -254,7 +254,7 @@ function ReflectionQuiz() {
                                 <button
                                     key={num}
                                     onClick={() => handleAnswer(num)}
-                                    className="w-12 h-12 rounded-full border-2 border-gray-200 hover:border-[#008C99] hover:bg-[#008C99] hover:text-white transition-all duration-200 font-semibold"
+                                    className="w-12 h-12 rounded-full border-2 border-gray-200 hover:border-[#008C99] hover:bg-[#008C99] hover:text-white transition-all duration-200 font-semibold text-black"
                                 >
                                     {num}
                                 </button>
@@ -267,12 +267,12 @@ function ReflectionQuiz() {
                     <div className="space-y-4">
                         <textarea
                             placeholder={currentQ.placeholder}
-                            className="w-full p-4 border border-gray-200 rounded-xl focus:border-[#008C99] focus:outline-none resize-none h-32"
+                            className="w-full p-4 border border-gray-200 rounded-xl focus:border-[#008C99] focus:outline-none resize-none h-32 text-black"
                             onChange={(e) => setAnswers({...answers, [currentQuestion]: e.target.value})}
                         />
                         <button
                             onClick={() => handleAnswer(answers[currentQuestion] || "")}
-                            className="bg-gradient-to-r from-[#008C99] to-[#00B8C4] text-white font-semibold py-2 px-6 rounded-xl hover:shadow-lg transition-all duration-200 flex items-center"
+                            className="bg-gradient-to-r from-[#008C99] to-[#00B8C4] text-white font-semibold py-2 px-6 rounded-xl hover:shadow-lg transition-all duration-200 flex items-center "
                         >
                             Lanjut
                             <ArrowRight className="w-4 h-4 ml-2" />
