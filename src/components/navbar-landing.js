@@ -204,7 +204,7 @@ const handleSectionNavigation = (sectionId) => {
               <button
                 onClick={() => handleSectionNavigation('rumahTangga')}
                 className={`flex items-center gap-1 rounded-full px-4 py-2 text-sm font-medium transition-all duration-300 ${
-                  isActiveLink('rumahTangga') || isActiveLink('/prakonsepsi') || isActiveLink('/kesiapan-relasional')
+                  isActiveLink('rumahTangga') || isActiveLink('/kesiapan-komitmen') || isActiveLink('/mengapa')
                     ? 'text-white bg-[#008C99] shadow-lg' 
                     : 'text-gray-600 hover:text-white hover:bg-[#008C99] hover:shadow-lg'
                 }`}
@@ -217,10 +217,10 @@ const handleSectionNavigation = (sectionId) => {
               
               {dropdownOpen.rumahTangga && (
                 <div className="absolute top-full w-56 bg-white rounded-lg shadow-lg border border-gray-100 py-2 animate-fade-in">
-                  <Link href="/prakonsepsi" className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#008C99] transition-colors">
+                  <Link href="/kesiapan-komitmen" className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#008C99] transition-colors">
                     Kesiapan Komitmen
                   </Link>
-                  <Link href="/kesiapan-relasional" className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#008C99] transition-colors">
+                  <Link href="/mengapa" className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#008C99] transition-colors">
                     Mengapa Harus Komitmen?
                   </Link>
                 </div>
@@ -236,7 +236,7 @@ const handleSectionNavigation = (sectionId) => {
               <button
                 onClick={() => handleSectionNavigation('parenting')}
                 className={`flex items-center gap-1 rounded-full px-4 py-2 text-sm font-medium transition-all duration-300 ${
-                  isActiveLink('parenting') || isActiveLink('/manajemen-stres') || isActiveLink('/stunting')
+                  isActiveLink('parenting') || isActiveLink('/kecerdasan-emosi') || isActiveLink('/quiz-refleksi')
                     ? 'text-white bg-[#008C99] shadow-lg' 
                     : 'text-gray-600 hover:text-white hover:bg-[#008C99] hover:shadow-lg'
                 }`}
@@ -249,10 +249,10 @@ const handleSectionNavigation = (sectionId) => {
               
               {dropdownOpen.keluargaParenting && (
                 <div className="absolute top-full w-56 bg-white rounded-lg shadow-lg border border-gray-100 py-2 animate-fade-in">
-                  <Link href="/manajemen-stres" className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#008C99] transition-colors">
+                  <Link href="/kecerdasan-emosi" className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#008C99] transition-colors">
                     Kecerdasan Emosi Dalam Hubungan
                   </Link>
-                  <Link href="/stunting" className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#008C99] transition-colors">
+                  <Link href="/quiz-refleksi" className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#008C99] transition-colors">
                     Mari berefleksi!
                   </Link>
                 </div>
@@ -389,7 +389,7 @@ const handleSectionNavigation = (sectionId) => {
               <button
                 onClick={() => handleMobileDropdownToggle('rumahTangga')}
                 className={`w-full flex items-center justify-between px-6 py-4 transition-colors ${
-                  isActiveLink('rumahTangga') || isActiveLink('/prakonsepsi') || isActiveLink('/kesiapan-relasional')
+                  isActiveLink('rumahTangga') || isActiveLink('/kesiapan-komitmen') || isActiveLink('/mengapa')
                     ? 'text-[#008C99] bg-blue-50 font-medium' 
                     : 'text-gray-700 hover:text-[#008C99] hover:bg-gray-50'
                 }`}
@@ -402,10 +402,10 @@ const handleSectionNavigation = (sectionId) => {
               
               {mobileDropdownOpen.rumahTangga && (
                 <div className="bg-gray-50">
-                  <Link href="/prakonsepsi" onClick={closeMobileMenu} className="block px-10 py-3 text-gray-600 hover:text-[#008C99] transition-colors">
+                  <Link href="/kesiapan-komitmen" onClick={closeMobileMenu} className="block px-10 py-3 text-gray-600 hover:text-[#008C99] transition-colors">
                     Kesiapan Komitmen
                   </Link>
-                  <Link href="/kesiapan-relasional" onClick={closeMobileMenu} className="block px-10 py-3 text-gray-600 hover:text-[#008C99] transition-colors">
+                  <Link href="/mengapa" onClick={closeMobileMenu} className="block px-10 py-3 text-gray-600 hover:text-[#008C99] transition-colors">
                     Mengapa Harus Komitmen?
                   </Link>
                 </div>
@@ -417,7 +417,7 @@ const handleSectionNavigation = (sectionId) => {
               <button
                 onClick={() => handleMobileDropdownToggle('keluargaParenting')}
                 className={`w-full flex items-center justify-between px-6 py-4 transition-colors ${
-                  isActiveLink('parenting') || isActiveLink('/manajemen-stres') || isActiveLink('/stunting')
+                  isActiveLink('parenting') || isActiveLink('/kecerdasan-emosi') || isActiveLink('/quiz-refleksi')
                     ? 'text-[#008C99] bg-blue-50 font-medium' 
                     : 'text-gray-700 hover:text-[#008C99] hover:bg-gray-50'
                 }`}
@@ -430,10 +430,10 @@ const handleSectionNavigation = (sectionId) => {
               
               {mobileDropdownOpen.keluargaParenting && (
                 <div className="bg-gray-50">
-                  <Link href="/manajemen-stres" onClick={closeMobileMenu} className="block px-10 py-3 text-gray-600 hover:text-[#008C99] transition-colors">
+                  <Link href="/kecerdasan-emosi" onClick={closeMobileMenu} className="block px-10 py-3 text-gray-600 hover:text-[#008C99] transition-colors">
                     Kecerdasan Emosi Dalam Hubungan
                   </Link>
-                  <Link href="/stunting" onClick={closeMobileMenu} className="block px-10 py-3 text-gray-600 hover:text-[#008C99] transition-colors">
+                  <Link href="/quiz-refleksi" onClick={closeMobileMenu} className="block px-10 py-3 text-gray-600 hover:text-[#008C99] transition-colors">
                     Mari berefleksi!
                   </Link>
                 </div>
